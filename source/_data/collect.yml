@@ -1,0 +1,287 @@
+- class_name: 🍉 动漫
+  class_desc: #分类描述
+  link_list:
+    - name: 少女与战车 #名字
+      img: https://pic.imgdb.cn/item/64b2b6a01ddac507ccb79dcc.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 古见同学有交流障碍症 #名字
+      img: https://pic.imgdb.cn/item/64b2b7941ddac507ccbc4f12.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 食戟之灵 #名字
+      img: https://pic.imgdb.cn/item/64b2b91d1ddac507ccc4c162.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 男子高中生的日常 #名字
+      img: https://pic.imgdb.cn/item/64b2ba3d1ddac507ccca1e97.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 头文字D #名字
+      img: https://pic.imgdb.cn/item/64b2bc0b1ddac507ccd1da82.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 高智能GPX #名字
+      img: https://pic.imgdb.cn/item/64b2bc721ddac507ccd38f99.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 本田小狼与我 #名字
+      img: https://pic.imgdb.cn/item/64b2b9ed1ddac507ccc8bf25.jpg #图片链接
+      score: 4.5 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+    
+    - name: Re：从零开始的异世界生活 #名字
+      img: https://pic.imgdb.cn/item/64b2c02c1ddac507cce29ee4.jpg #图片链接
+      score: 4 # 1-5星
+      icon: fa-brands fa-bilibili #左上角图标
+      tip: 日漫 # 右上角文字
+
+- class_name: 🎞️ 电影
+  class_desc: #分类描述
+  link_list:
+    - name: 星际穿越 #名字
+      img: https://pic.imgdb.cn/item/64b2c9651ddac507cc05ee70.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 科幻片 # 右上角文字
+
+    - name: 信条 #名字
+      img: https://pic.imgdb.cn/item/64b2ca7a1ddac507cc09a6c5.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 科幻片 # 右上角文字
+
+    - name: 盗梦空间 #名字
+      img: https://pic.imgdb.cn/item/64b2cbca1ddac507cc0e03e8.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 科幻片 # 右上角文字
+
+    - name: 变形金刚 #名字
+      img: https://pic.imgdb.cn/item/64b2c8d51ddac507cc03d09a.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 科幻片 # 右上角文字
+
+    - name: 赛车总动员 #名字
+      img: https://pic.imgdb.cn/item/64b2ccdb1ddac507cc118607.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 动漫 # 右上角文字
+
+    - name: 名侦探柯南 #名字
+      img: https://pic.imgdb.cn/item/64b2cd341ddac507cc1299c4.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 动漫 # 右上角文字
+
+    - name: 疯狂动物城 #名字
+      img: https://pic.imgdb.cn/item/64b2cfcb1ddac507cc1afb23.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 动漫 # 右上角文字
+
+    - name: 你的名字 #名字
+      img: https://pic.imgdb.cn/item/64b2c7cb1ddac507ccff138e.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 动漫 # 右上角文字
+
+    - name: 华尔街之狼 #名字
+      img: https://pic.imgdb.cn/item/64b2d05d1ddac507cc1ca88c.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 剧情片 # 右上角文字
+
+    - name: 白日梦想家 #名字
+      img: https://pic.imgdb.cn/item/64b2d0d31ddac507cc1e22b5.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 剧情片 # 右上角文字
+
+    - name: 阿甘正传 #名字
+      img: https://pic.imgdb.cn/item/64b2d14b1ddac507cc1f8ba6.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 剧情片 # 右上角文字
+
+    - name: 肖申克的救赎 #名字
+      img: https://pic.imgdb.cn/item/64b2d18c1ddac507cc205b3c.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 剧情片 # 右上角文字
+
+    - name: 速度与激情 #名字
+      img: https://pic.imgdb.cn/item/64b2d20e1ddac507cc220051.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 动作片 # 右上角文字
+
+    - name: 惊天魔盗团 #名字
+      img: https://pic.imgdb.cn/item/64b2d27f1ddac507cc235cd4.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 悬疑片 # 右上角文字
+
+    - name: 狂怒 #名字
+      img: https://pic.imgdb.cn/item/64b2d3091ddac507cc250512.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 战争片 # 右上角文字
+
+    - name: 拯救大兵瑞恩 #名字
+      img: https://pic.imgdb.cn/item/64b2d3781ddac507cc2647ca.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 战争片 # 右上角文字
+
+- class_name: 🌏 纪录片
+  class_desc: #分类描述
+  link_list:
+    - name: Top Gear #名字
+      img: https://pic.imgdb.cn/item/64b2d4881ddac507cc293946.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 英国 # 右上角文字
+
+    - name: The Grand Tour #名字
+      img: https://pic.imgdb.cn/item/64b2d4e91ddac507cc2a4b19.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 美国 # 右上角文字
+
+    - name: 克拉克森的农场 #名字
+      img: https://pic.imgdb.cn/item/64b2d5291ddac507cc2b0547.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 美国 # 右上角文字
+
+    - name: 极速争胜 #名字
+      img: https://pic.imgdb.cn/item/64b2d5a51ddac507cc2c3e6d.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 美国 # 右上角文字
+
+- class_name: 📖 漫画
+  class_desc: #分类描述
+  link_list:
+    - name: らぶらぶ作戦 #名字
+      img: https://pic.imgdb.cn/item/64b37ad11ddac507cca2afdf.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-book-open #左上角图标
+      tip: 日漫 # 右上角文字
+
+    - name: 战车道小百科 #名字
+      img: https://pic.imgdb.cn/item/64b2d7201ddac507cc2fc15c.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-book-open #左上角图标
+      tip: 日漫 # 右上角文字
+    
+    - name: 古见同学有交流障碍症 #名字
+      img: https://pic.imgdb.cn/item/64b2d8981ddac507cc32e538.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-book-open #左上角图标
+      tip: 日漫 # 右上角文字
+
+- class_name: 🎮 游戏
+  class_desc: #分类描述
+  link_list:
+    - name: GTA5 #名字
+      img: https://pic.imgdb.cn/item/64b669d01ddac507cce8b7d2.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 剧情 # 右上角文字
+
+    - name: 极限竞速:地平线5 #名字
+      img: https://pic.imgdb.cn/item/64b2d9d01ddac507cc355c6b.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 竞速 # 右上角文字
+
+    - name: 极限竞速:地平线4 #名字
+      img: https://pic.imgdb.cn/item/64b2da261ddac507cc36106b.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 竞速 # 右上角文字
+
+    - name: 极品飞车21:热度 #名字
+      img: https://pic.imgdb.cn/item/64b2da751ddac507cc36c0e5.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 竞速 # 右上角文字
+
+    - name: 极品飞车20:复仇 #名字
+      img: https://pic.imgdb.cn/item/64b2daaa1ddac507cc372226.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 竞速 # 右上角文字
+
+    - name: 战地1 #名字
+      img: https://pic.imgdb.cn/item/64b2dbf31ddac507cc398696.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 射击 # 右上角文字
+
+    - name: 战地5 #名字
+      img: https://pic.imgdb.cn/item/64b2dc1f1ddac507cc39d963.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 射击 # 右上角文字
+
+    - name: 欧洲卡车模拟2 #名字
+      img: https://pic.imgdb.cn/item/64b668961ddac507cce43720.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 模拟 # 右上角文字
+
+    - name: 城市：天际线 #名字
+      img: https://pic.imgdb.cn/item/64b668ee1ddac507cce580ff.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-gamepad #左上角图标
+      tip: 经营 # 右上角文字
+
+- class_name: 📺 电视剧
+  class_desc: #分类描述
+  link_list:
+    - name: 我是大哥大 #名字
+      img: https://pic.imgdb.cn/item/64b2c2361ddac507ccea4e7e.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-tv #左上角图标
+      tip: 日剧 # 右上角文字
+
+    - name: 难破MG5 #名字
+      img: https://pic.imgdb.cn/item/64b2c0b31ddac507cce4b124.jpg #图片链接
+      score: 4 # 1-5星
+      icon: fa-solid fa-tv #左上角图标
+      tip: 日剧 # 右上角文字
+
+    - name: 神探夏洛克 #名字
+      img: https://pic.imgdb.cn/item/64b2c1c21ddac507cce8bc82.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-tv #左上角图标
+      tip: 英剧 # 右上角文字
+
+    - name: 长安十二时辰 #名字
+      img: https://pic.imgdb.cn/item/64b667321ddac507ccdf7857.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-tv #左上角图标
+      tip: 国产剧 # 右上角文字
+
+    - name: 狂飙 #名字
+      img: https://pic.imgdb.cn/item/64b2c3781ddac507cceee0d3.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-tv #左上角图标
+      tip: 国产剧 # 右上角文字

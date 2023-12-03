@@ -1,0 +1,6 @@
+top:
+  - class_name:
+    id_name:
+    name: 你在哪里呢？
+    icon: fa-sharp fa-solid fa-location-dot
+    html: <div id="welcome-info"></div>
