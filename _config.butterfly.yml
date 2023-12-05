@@ -620,7 +620,7 @@ theme_color:
   text_selection: "#a01919"
   link_color: "#49b1f5"
   meta_color: "#858585"
-  hr_color: "#475D90"
+  hr_color: "#4c4948"
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
   toc_color: "#475D90"
@@ -747,7 +747,7 @@ blog_title_font:
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
-  enable: true
+  enable: false
   icon: '\f578' # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 

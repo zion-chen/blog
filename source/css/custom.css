@@ -328,3 +328,7 @@ div#runtime {
 #site-title, .site-name {
   font-family: 'SmileySans-Oblique'!important;
 }
+
+#sidebar #sidebar-menus .menus_items .site-page:hover {
+  border-radius: 30px;
+}

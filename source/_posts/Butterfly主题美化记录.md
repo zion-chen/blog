@@ -59,8 +59,8 @@ inject:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 16px
-  code-font-size: 16px
+  global-font-size: 17px
+  code-font-size: 15px
   font-family: SanJiYuanTiJian, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif
   code-font-family: Cascadia Mono, consolas, Menlo, "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif
 
