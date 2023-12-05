@@ -10,8 +10,8 @@ cover: https://pic.imgdb.cn/item/656af6b9c458853aef130eae.jpg
 ---
 ## 前言
 选用 `Butterfly` 主题主要也是因为国内使用者很多，网络上有非常多的魔改美化教程。本文用来记录个人网站的美化方案，尤其是涉及到更改主题源码的部分，方便今后主题升级。
-## 引入自定义css和js文件
-引入自定义css和js文件可以对博客原本的样式进行修改，是一切美化步骤的基础。
+## 引入自定义 css 和 js 文件
+引入自定义 css 和 js 文件可以对博客原本的样式进行修改，是一切美化步骤的基础。
 1. 创建 `[blogRoot]/source/css/custom.css` 文件，在 `custom.css` 文件中写入css样式。
 2. 创建 `[blogRoot]/source/css/script.js` 文件，在 `script.js` 文件中写入js代码。
 3. 在主题配置文件 `_config.butterfly.yml` 中引入 `custom.css` 文件和 `script.js` 文件：
@@ -38,20 +38,7 @@ inject:
 @font-face{
     font-family: 'DongFangDaKai';
     font-display: swap;
-    /* unicode-range: U+4E00-9FA5; */
     src: url('../fonts/Alimama_DongFangDaKai_Regular.ttf') format("truetype");
-}
-
-@font-face{
-    font-family: 'SanJiYuanTiJian';
-    font-display: swap;
-    src: url('../fonts/SanJiYuanTiJian-Cu-2.ttf') format("truetype");
-}
-
-@font-face{
-    font-family: 'FiraCode';
-    font-display: swap;
-    src: url('../fonts/FiraCode-Regular.ttf') format("truetype");
 }
 ```
 3. 在主题配置文件 `_config.butterfly.yml` 中修改如下配置项，配置标题字体、正文字体、代码块字体
@@ -59,9 +46,31 @@ inject:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 17px
-  code-font-size: 15px
-  font-family: SanJiYuanTiJian, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif
+  global-font-size: 16px
+  code-font-size: 14px
+  font-family: 
+    # 自定义字体
+    SanJiYuanTiJian,
+    # Western language
+    # Apple
+    -apple-system, BlinkMacSystemFont,
+    # Windows
+    "Segoe UI",
+    # Android
+    Roboto,
+    # Ubuntu
+    Ubuntu,
+    # fallback
+    "Helvetica Neue", Helvetica, Arial,
+    # Simplified Chinese
+    # Apple
+    "PingFang SC",
+    # Windows
+    "Microsoft YaHei UI", "Microsoft YaHei",
+    # Android
+    "Source Han Sans CN"
+    # fallback
+    sans-serif
   code-font-family: Cascadia Mono, consolas, Menlo, "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif
 
 # Font settings for the site title and site subtitle
@@ -69,6 +78,130 @@ font:
 blog_title_font: 
   font_link:
   font-family: DongFangDaKai, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+```
+## 使用 gulp.js 来压缩静态资源
+{% note info modern %}
+此部分参考文章：{% link 使用gulp压缩博客静态资源-Akilarの糖果屋 https://akilar.top/posts/49b73b87/ %} 
+{% endnote %}
+### 需求分析
+由于博客没有使用 CDN，且托管网站的 Vercel 服务器位于国外，所以加载静态资源对于网站打开速度的影响非常大。而 {% link gulp.js https://www.gulpjs.com.cn/%} 是一款自动化工具，可以帮我们在构建博客时通过一些插件来对静态资源进行压缩处理。
+### 依赖安装
+1. 安装 gulp 插件
+```bash
+npm install --global gulp-cli # 全局安装 gulp 指令集
+npm install gulp --save # 安装 gulp 插件
+```
+2. 安装 HTML 压缩插件
+```bash
+npm install gulp-htmlclean --save-dev
+npm install gulp-html-minifier-terser --save-dev
+```
+其中，`gulp-htmlclean` 插件用来删掉代码中的空白，`gulp-html-minifier-terser` 插件用来删除代码中的注释、压缩 CSS 和 JS 代码，使用 `terser` 库来实现，支持 ES6 语法。
+3. 安装 CSS 压缩插件
+```bash
+npm install gulp-clean-css --save-dev
+```
+4. 安装 JS 压缩插件
+```bash
+npm install gulp-terser --save-dev
+```
+`gulp-terser` 插件使用 `terser` 库来实现，支持 ES6 语法。
+5. 安装字体压缩插件
+```bash
+npm install gulp-fontmin --save-dev
+```
+`gulp-fontmin` 的工作原理是，通过遍历 `[blogRoot]/public/**/*.html` 中的字符，匹配其字体样式，输出压缩后的字体到 `[blogRoot]/public/fontsdest/*.ttf`
+### 创建任务脚本
+在博客根目录下创建 `gulpfile.js` ，输入以下内容：
+```js
+// 用到的各个插件
+var gulp = require('gulp');
+var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-html-minifier-terser');
+var htmlclean = require('gulp-htmlclean');
+var fontmin = require('gulp-fontmin');
+// gulp-tester
+var terser = require('gulp-terser');
+// 压缩js
+gulp.task('compress', async() =>{
+  gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
+    .pipe(terser())
+    .pipe(gulp.dest('./public'))
+});
+// 压缩css
+gulp.task('minify-css', () => {
+    return gulp.src(['./public/**/*.css'])
+        .pipe(cleanCSS({
+            compatibility: 'ie11'
+        }))
+        .pipe(gulp.dest('./public'));
+});
+// 压缩html
+gulp.task('minify-html', () => {
+    return gulp.src('./public/**/*.html')
+        .pipe(htmlclean())
+        .pipe(htmlmin({
+            removeComments: true, // 清除html注释
+            collapseWhitespace: true, // 压缩html
+            collapseBooleanAttributes: true,
+            // 省略布尔属性的值，例如：<input checked="true"/> ==> <input />
+            removeEmptyAttributes: true,
+            // 删除所有空格作属性值，例如：<input id="" /> ==> <input />
+            removeScriptTypeAttributes: true,
+            // 删除<script>的type="text/javascript"
+            removeStyleLinkTypeAttributes: true,
+            // 删除<style>和<link>的 type="text/css"
+            minifyJS: true, // 压缩页面 JS
+            minifyCSS: true, // 压缩页面 CSS
+            minifyURLs: true  // 压缩页面URL
+        }))
+        .pipe(gulp.dest('./public'))
+});
+// 压缩字体
+function minifyFont(text, cb) {
+  gulp
+    .src('./public/fonts/*.ttf') // 原字体所在目录
+    .pipe(fontmin({
+      text: text
+    }))
+    .pipe(gulp.dest('./public/fontsdest/')) // 压缩后的输出目录
+    .on('end', cb);
+}
+
+gulp.task('mini-font', (cb) => {
+  var buffers = [];
+  gulp
+    .src(['./public/**/*.html']) // HTML文件所在目录请根据自身情况修改
+    .on('data', function(file) {
+      buffers.push(file.contents);
+    })
+    .on('end', function() {
+      var text = Buffer.concat(buffers).toString('utf-8');
+      minifyFont(text, cb);
+    });
+});
+// 运行gulp命令时依次执行以下任务
+gulp.task('default', gulp.parallel(
+  'compress', 'minify-css', 'minify-html','mini-font'
+))
+```
+### 工作流程
+1. 自定义脚本命令
+在 `[blogRoot]/package.json` 中加入以下代码：
+```bash
+"scripts": {
+  "build": "hexo generate",
+  "clean": "hexo clean",
+  "deploy": "hexo deploy",
+  "server": "hexo server",
+  # 加入自定义脚本
+  "fuck": "hexo cl && hexo g && gulp"
+},
+```
+2. 每次构建网站并在本地部署，输入以下命令：
+```bash
+npm run fuck
+hexo s
 ```
 ## 网站背景一图流
 {% note info modern %}

@@ -1,24 +1,11 @@
 @font-face{
     font-family: 'SmileySans-Oblique';
     font-display: swap;
-    src: url('../fonts/SmileySans-Oblique.ttf') format("truetype");
+    src: url('../fontsdest/SmileySans-Oblique.ttf') format("truetype");
 }
 
 @font-face{
     font-family: 'DongFangDaKai';
     font-display: swap;
-    /* unicode-range: U+4E00-9FA5; */
-    src: url('../fonts/Alimama_DongFangDaKai_Regular.ttf') format("truetype");
-}
-
-@font-face{
-    font-family: 'SanJiYuanTiJian';
-    font-display: swap;
-    src: url('../fonts/SanJiYuanTiJian-Cu-2.ttf') format("truetype");
-}
-
-@font-face{
-    font-family: 'FiraCode';
-    font-display: swap;
-    src: url('../fonts/FiraCode-Regular.ttf') format("truetype");
+    src: url('../fontsdest/Alimama_DongFangDaKai_Regular.ttf') format("truetype");
 }
