@@ -1,11 +1,1 @@
-@font-face{
-    font-family: 'SmileySans-Oblique';
-    font-display: swap;
-    src: url('../fonts/SmileySans-Oblique.ttf') format("truetype");
-}
-
-@font-face{
-    font-family: 'DongFangDaKai';
-    font-display: swap;
-    src: url('../fonts/Alimama_DongFangDaKai_Regular.ttf') format("truetype");
-}
+@font-face{font-family:SmileySans-Oblique;font-display:swap;src:url(../fonts/SmileySans-Oblique.ttf) format("truetype")}@font-face{font-family:DongFangDaKai;font-display:swap;src:url(../fonts/Alimama_DongFangDaKai_Regular.ttf) format("truetype")}
